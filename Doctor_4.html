@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220311161059">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220311161059">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220324200628">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220324200628">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -223,17 +223,19 @@
 								<form action="" method="POST" class="form__content">
 									<div class="form__line">
 										<label for="inp" class="form__label">E-mail</label>
-										<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Неправильный E-mail" placeholder="Ваш E-mail" class="input">
+										<input class="input" autocomplete="off" type="email" name="form[]" data-required="email" data-error="Неправильный E-mail">
 									</div>
 
 									<div class="form__line">
 										<label for="inp" class="form__label">Имя</label>
-										<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Неправильное Имя" placeholder="Ваше полное Имя" class="input">
+										<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Неправильное Имя" class="input">
 									</div>
 
 									<div class="form__line">
 										<label for="inp" class="form__label">Телефон</label>
-										<input autocomplete="off" type="text" name="form[]" data-required="email" data-error="Неправильный телефон" placeholder="Ваш телефон" class="input">
+
+										<input data-inputmask="'mask': '9' , 'repeat' : 11, 'greedy' : true" class="input" name="phone" placeholder="+7" autocomplete="off" data-error="Неправильный телефон" data-required="phone" type="tel" id="phone">
+
 									</div>
 
 									<button type="submit" class="form__button">Отправить</button>
@@ -262,7 +264,8 @@
 								</div>
 								<div class="footer__text">
 									<p>
-										ООО "Компания Фагот", Россия, Барнаул, ул. Партизанская 105
+										<a class="link" href="https://www.google.com/maps?ll=53.337132,83.779655&z=16&t=m&hl=en&gl=RU&mapclient=embed&cid=17492435233953632074">ООО
+											"Компания Фагот", Россия, Барнаул, ул. Партизанская 105 </a>
 									</p>
 								</div>
 
@@ -276,8 +279,7 @@
 
 								<div class="footer__text">
 									<p>
-
-										<a class="link" href="mailto:fagotgol@gmail.com"> fagotgol@gmail.com </a>
+										fagotgol@gmail.com
 									</p>
 								</div>
 
@@ -357,25 +359,27 @@
 								</div>
 
 							</li>
+							<ul class="pages">
+								<li><a class="link" href="https://prodoctorov.ru/barnaul/lpu/24762-fagot/otzivi/#tab-content"> Отзывы </a>
+								</li>
 
-							<li><a class="link" href="https://prodoctorov.ru/barnaul/lpu/24762-fagot/otzivi/#tab-content"> Отзывы </a>
-							</li>
+								<li>
+									<a class="link" href="Services.html">Услуги</a>
+								</li>
 
-							<li>
-								<a class="link" href="Services.html">Услуги</a>
-							</li>
+								<li>
+									<a class="link" href="Price.html">Прайс</a>
+								</li>
 
-							<li>
-								<a class="link" href="Price.html">Прайс</a>
-							</li>
+								<li>
+									<a class="link" href="Contacts.html">Контакты</a>
+								</li>
 
-							<li>
-								<a class="link" href="Contacts.html">Контакты</a>
-							</li>
+								<li>
+									<a class="link" href="About.html">О нас</a>
+								</li>
+							</ul>
 
-							<li>
-								<a class="link" href="About.html">О нас</a>
-							</li>
 
 
 						</ul>
@@ -559,7 +563,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220311161059"></script>
+	<script src="js/app.min.js?_v=20220324200628"></script>
 
 
 </body>
